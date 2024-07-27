@@ -1,4 +1,4 @@
-import { SiJavascript, SiPython, SiHtml5, SiCss3, SiReact, SiGithub, SiInstagram, SiTailwindcss } from "react-icons/si";
+import { SiJavascript, SiPython, SiHtml5, SiCss3, SiReact, SiGithub, SiInstagram, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 function Title(props) {
     return (
@@ -18,7 +18,8 @@ function AboutMe() {
 function Skills() {
 
     var Icons = {
-        'JavaScript': 'JavaScript: Intermediario',
+        'JavaScript': 'JavaScript: Basico/Intermediario',
+        'TypeScript': 'TypeScript: Basico/Intermediario',
         'Python': 'Python: Intermediario',
         'HTML 5': 'HTML 5: Intermediario',
         'CSS 3': 'CSS 3: Intermediario',
@@ -32,6 +33,10 @@ function Skills() {
             <div className="px-3 pt-2 flex gap-3 items-center dark:text-zinc-100">
                 <SiJavascript />
                 <p className="text-base md:text-xl">{Icons.JavaScript}</p>
+            </div>
+            <div className="px-3 pt-2 flex gap-3 items-center dark:text-zinc-100">
+                <SiTypescript />
+                <p className="text-base md:text-xl">{Icons.TypeScript}</p>
             </div>
             <div className="px-3 pt-2 flex gap-3 items-center dark:text-zinc-100">
                 <SiPython />
